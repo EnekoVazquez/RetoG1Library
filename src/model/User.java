@@ -20,27 +20,28 @@ public class User implements Serializable {
     private LocalDate createDate;
     private LocalDate writeDate;
     private Boolean activo;
-    private String compania;
+    private int compania;
     private UserType type;
     private int telefono;
     private int codigoPostal;
-    private String Direccion;
+    private String direccion;
 
     public User() {
     }
 
-    public User(String email, String password, String nombre, LocalDate createDate, LocalDate writeDate, Boolean activo, String compania, UserType type, int telefono, int codigoPostal, String Direccion) {
+    public User(String email, String password, String nombre, LocalDate createDate, LocalDate writeDate, Boolean activo, int compania, UserType type, int telefono, int codigoPostal, String direccion) {
         this.email = email;
         this.password = password;
         this.nombre = nombre;
-        this.createDate = createDate;
+        this.createDate = LocalDate.now();
         this.writeDate = writeDate;
-        this.activo = activo;
-        this.compania = compania;
+        this.activo = true;
+        this.compania = 1;
         this.type = type;
         this.telefono = telefono;
         this.codigoPostal = codigoPostal;
-        this.Direccion = Direccion;
+        this.direccion = direccion;
+        this.type = UserType.USER;
     }
 
     public String getEmail() {
@@ -91,11 +92,11 @@ public class User implements Serializable {
         this.activo = activo;
     }
 
-    public String getCompania() {
+    public int getCompania() {
         return compania;
     }
 
-    public void setCompania(String compania) {
+    public void setCompania(int compania) {
         this.compania = compania;
     }
 
@@ -124,16 +125,16 @@ public class User implements Serializable {
     }
 
     public String getDireccion() {
-        return Direccion;
+        return direccion;
     }
 
     public void setDireccion(String Direccion) {
-        this.Direccion = Direccion;
+        this.direccion = direccion;
     }
 
     @Override
     public String toString() {
-        return "User{" + "email=" + email + ", password=" + password + ", nombre=" + nombre + ", createDate=" + createDate + ", writeDate=" + writeDate + ", activo=" + activo + ", compania=" + compania + ", type=" + type + ", telefono=" + telefono + ", codigoPostal=" + codigoPostal + ", Direccion=" + Direccion + '}';
+        return "User{" + "email=" + email + ", password=" + password + ", nombre=" + nombre + ", createDate=" + createDate + ", writeDate=" + writeDate + ", activo=" + activo + ", compania=" + compania + ", type=" + type + ", telefono=" + telefono + ", codigoPostal=" + codigoPostal + ", Direccion=" + direccion + '}';
     }
 
 }
