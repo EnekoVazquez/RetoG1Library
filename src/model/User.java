@@ -25,11 +25,12 @@ public class User implements Serializable {
     private int telefono;
     private int codigoPostal;
     private String direccion;
+    private String ciudad;
 
     public User() {
     }
 
-    public User(String email, String password, String nombre, LocalDate createDate, LocalDate writeDate, Boolean activo, int compania, UserType type, int telefono, int codigoPostal, String direccion) {
+    public User(String email, String password, String nombre, LocalDate createDate, LocalDate writeDate, Boolean activo, int compania, UserType type, int telefono, int codigoPostal, String direccion, String ciudad) {
         this.email = email;
         this.password = password;
         this.nombre = nombre;
@@ -41,6 +42,7 @@ public class User implements Serializable {
         this.telefono = telefono;
         this.codigoPostal = codigoPostal;
         this.direccion = direccion;
+        this.ciudad = ciudad;
         this.type = UserType.USER;
     }
 
@@ -124,13 +126,24 @@ public class User implements Serializable {
         this.codigoPostal = codigoPostal;
     }
 
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+    
+    
     public String getDireccion() {
         return direccion;
     }
 
-    public void setDireccion(String Direccion) {
-        this.direccion = direccion;
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
     }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    
 
     @Override
     public String toString() {
