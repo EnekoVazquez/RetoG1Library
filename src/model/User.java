@@ -35,7 +35,7 @@ public class User implements Serializable {
         this.password = password;
         this.nombre = nombre;
         this.createDate = LocalDate.now();
-        this.writeDate = writeDate;
+        this.writeDate = LocalDate.now();
         this.activo = true;
         this.compania = 1;
         this.type = type;
@@ -129,8 +129,7 @@ public class User implements Serializable {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
-    
-    
+
     public String getDireccion() {
         return direccion;
     }
@@ -142,8 +141,6 @@ public class User implements Serializable {
     public String getCiudad() {
         return ciudad;
     }
-
-    
 
     @Override
     public String toString() {
