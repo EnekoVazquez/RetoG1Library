@@ -2,7 +2,7 @@
  * Una excepción que se lanza cuando no se puede encontrar un usuario en el sistema.
  * Esta excepción se utiliza para indicar que el usuario solicitado no existe en el sistema.
  *
- * @author Josu
+ * @author Josu.
  */
 package exception;
 

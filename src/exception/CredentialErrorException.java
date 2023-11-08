@@ -2,7 +2,7 @@
  * Una excepción que se lanza cuando se producen errores relacionados con credenciales de usuario.
  * Esta excepción se utiliza para indicar que las credenciales proporcionadas no son válidas.
  *
- * @author Josu
+ * @author Josu.
  */
 package exception;
 

@@ -4,7 +4,7 @@
  *
  * Esta enumeración es serializable para permitir la transferencia de mensajes a través de la red u otros medios.
  *
- * @author Eneko.Josu
+ * @author Eneko.Josu.
  */
 package model;
 

@@ -2,7 +2,7 @@
  * Una excepción que se lanza cuando se producen errores en el servidor.
  * Esta excepción se utiliza para indicar que ha ocurrido un error inesperado en el servidor.
  *
- * @author Eneko
+ * @author Eneko.
  */
 package exception;
 

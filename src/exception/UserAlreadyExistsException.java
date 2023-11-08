@@ -2,7 +2,7 @@
  * Una excepción que se lanza cuando se intenta registrar un usuario que ya existe.
  * Esta excepción se utiliza para indicar que el usuario que se intenta registrar ya está presente en el sistema.
  *
- * @author Eneko
+ * @author Eneko.
  */
 package exception;
 

@@ -10,7 +10,7 @@ import java.time.LocalDate;
 
 /**
  *
- * @author Eneko.
+ * @author Eneko.josu.
  */
 public class User implements Serializable {
 

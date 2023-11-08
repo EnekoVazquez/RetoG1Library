@@ -1,7 +1,7 @@
 /**
  * Interfaz para autenticación y registro de usuarios.
  *
- * @author Eneko,Josu
+ * @author Eneko,Josu.
  */
 package model;
 
