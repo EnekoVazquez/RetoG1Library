@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Eneko..
+ * @author Eneko
  */
 public class Encapsulator implements Serializable {
 
